@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com HTML</title>
+</head>
+<body bgcolor="#F5F5F5">
+
+    <header>
+        <div align="center">
+            <font color=Teal size="4"><h1 id="inicio">Primeiros Passos com HTML</h1></font>
+            <hr color="CadetBlue" width="70%">
+            <blockquote><mark><i>"Nós só podemos ver um pouco do futuro, mas o suficiente para ver que há muito a se fazer" - Allan Turing</i></mark></blockquote>
+        </div>
+
+        <font color="grey">
+            <ul>
+                <li><a href="#introducao">Introdução ao HTML na prática</a></li>
+                <li><a href="#formularios">Trabalhando com formulários HTML</a></li>
+                <li><a href="#formatacao">Estruturando seu HTML + Formatação</a></li>
+                <li><a href="#midia">Trabalhando com mídias utilizando o HTML</a></li>
+                <li><a href="#tabela">Criando tabelas com HTML</a></li>
+                <li><a href="#referencia">Referências</a></li>
+            </ul>
+        </font>
+
+        <p align="center"><i>Ouça um som enquanto você descobre mais sobre o mundo Front-end</i></p>
+        <div align="center">
+            <audio controls>
+                <source src="shinunoga-e-wa-128k-20221019173601-59968.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="introducao"><font color=#008080>Introdução ao HTML na prática</font></h2>
+         <small><a href="#inicio">(Voltar)</a></small>
+        <p>O <b>HTML</b> (HyperText Markup Language) é a linguagem de marcação responsável por estruturar e organizar os conteúdos de páginas na web. Ele não é uma linguagem de programação, mas sim uma linguagem de marcação que define os elementos e suas funções dentro de um site.</p>
+
+        <h3><font color="CadetBlue">Conceitos importantes</font></h3>
+        <p>
+            <b>Tags</b>: São os elementos básicos do HTML. Elas definem o início e o fim de um conteúdo ou funcionalidade.<br>
+            <b>Atributos</b>: São informações adicionais dentro das tags que configuram seu comportamento ou aparência.
+        </p>
+
+        <h3><font color="CadetBlue">Tags Básicas</font></h3>
+        <ol>
+            <li>!DOCTYPE html – Declara que o documento é HTML5.</li> 
+            <li>html – Elemento raiz do documento.</li>
+            <li>head – Contém metadados, título e links para arquivos externos.</li> 
+            <li>title – Define o título da página.</li>
+            <li>body – Onde todo o conteúdo visível da página é inserido.</li>
+            <li>h1 a h6 – Títulos, sendo h1 o mais importante.</li>
+            <li>p – Parágrafo de texto.</li>
+            <li>a – Cria um link.</li>
+            <li>img – Insere uma imagem.</li>
+            <li>ul, ol, li – Listas não ordenadas, ordenadas e itens.</li>
+            <li>div e span – Elementos genéricos de agrupamento.</li>
+        </ol>
+
+        <hr color=Teal>
+
+        <h2 id="formularios"><font color= #008080>Trabalhando com formulários</font></h2>
+         <small><a href="#inicio">(Voltar)</a></small>
+        <p>Os formulários são usados para coletar dados dos usuários. A tag form define o formulário, e os atributos mais importantes são <b>action</b> e <b>method</b>.</p>
+
+        <h3 align="center"><i>Preencha nosso formulário e saiba mais!</i></h3>
+
+        <form>
+            <fieldset>
+                <legend><b>Dados Pessoais</b></legend>
+                <div align="center">
+                    <table>
+                        <tr>
+                            <td><img src="formulário-de-referência.webp" width="200"></td>
+                            <td>
+                                <label>* Nome e sobrenome</label><br>
+                                <input type="text" required><br><br>
+
+                                <label>E-mail</label><br>
+                                <input type="email" placeholder="seuemail@dominio.com"><br><br>
+
+                                <label>Telefone</label><br>
+                                <input type="tel" placeholder="(XX) XXXXX-XXXX"><br><br>
+
+                                <label>* Mensagem</label><br>
+                                <textarea cols="50" rows="5" required></textarea><br><br>
+
+                                <fieldset>
+                                    <legend>Como prefere nosso contato?</legend>
+                                    <input type="radio" name="contato"> E-mail
+                                    <input type="radio" name="contato"> Telefone
+                                    <input type="radio" name="contato"> WhatsApp
+                                </fieldset><br>
+
+                                <label>Motivo do contato</label><br>
+                                <select>
+                                    <option>Selecione</option>
+                                    <option>Dúvida</option>
+                                    <option>Sugestão</option>
+                                    <option>Elogio</option>
+                                    <option>Reclamação</option>
+                                </select><br><br>
+
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpar</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+        </form>
+
+        <hr color=Teal>
+
+        <h2 id="formatacao"><font color= #008080>Estruturando seu HTML + Formatação</font></h2>
+         <small><a href="#inicio">(Voltar)</a></small>
+        <p>A estruturação no HTML organiza os conteúdos da página de forma lógica e acessível.</p>
+        <ul>
+            <li><b>Div</b> – Agrupa e estrutura seções maiores.</li>
+            <li><b>Span</b> – Agrupa pequenos trechos em linha.</li>
+            <li><b>Fieldset</b> – Agrupa elementos em formulários.</li>
+            <li><b>Iframe</b> – Incorpora outra página HTML.</li>
+            <li><b>Embed</b> – Incorporação (em desuso).</li>
+        </ul>
+
+        <h3><font color="CadetBlue">Resenha sobre cores</font></h3>
+        <p>No HTML, as cores podem ser aplicadas usando códigos hexadecimais (#FF5733), RGB, RGBA e HSL. Cada método permite personalizar a aparência dos elementos.</p>
+
+        <hr color=Teal>
+
+        <h2 id = "midia"><font color= #008080>Trabalhando com Mídias</font></h2>
+        <ul>
+            <li><b>Img</b> – Insere imagens com src, alt e title.</li>
+            <li><b>Audio</b> – Insere áudio com controls, autoplay, loop.</li>
+            <li><b>Video</b> – Insere vídeos com controls e track para legendas.</li>
+        </ul>
+
+        <hr color=Teal>
+
+        <h2 id="tabela" align="center"><font color= #008080>Criando Tabelas</font></h2>
+         <small><a href="#inicio">(Voltar)</a></small>
+        <table border="2" bgcolor="AliceBlue" align="center">
+            <caption><b>Tabela de Tags</b></caption>
+            <tr bgcolor="LightSeaGreen">
+                <th>Tag</th>
+                <th>Função</th>
+            </tr>
+            <tr><td>table</td><td>Início e fim da tabela</td></tr>
+            <tr><td>thead</td><td>Define o cabeçalho</td></tr>
+            <tr><td>tbody</td><td>Corpo da tabela</td></tr>
+            <tr><td>tfoot</td><td>Rodapé da tabela</td></tr>
+            <tr><td>tr</td><td>Define uma linha</td></tr>
+            <tr><td>th</td><td>Cabeçalho da tabela</td></tr>
+            <tr><td>td</td><td>Célula de dados</td></tr>
+            <tr><td>caption</td><td>Legenda da tabela</td></tr>
+            <tr><td>colgroup</td><td>Agrupa colunas</td></tr>
+            <tr><td>col</td><td>Estiliza colunas</td></tr>
+        </table>
+
+        <hr color=Teal>
+
+        <h2 id="referencia"><font color= #008080>Entendendo HTML Semântico</font></h2>
+        <small><a href="#inicio">(Voltar)</a></small>
+        <p>O HTML semântico utiliza tags que representam o significado do conteúdo, melhorando acessibilidade e SEO.</p>
+
+        <h3 align="center"><i>Vídeo explicativo</i></h3>
+        <div align="center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8h0Pf_z27kE" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <ul>
+            <li>Accessibility Tree – Representação acessível do conteúdo.</li>
+            <li>alt – Descrição alternativa para imagens.</li>
+            <li>ARIA – Atributos de acessibilidade para elementos interativos.</li>
+        </ul>
+    </main>
+
+    <hr color=Teal>
+
+    <h2 align="center"><font color= #008080>Referências</font></h2>
+     <small><a href="#inicio">(Voltar)</a></small>
+    <p align="center">
+        Santander 2025 Front-End - <a href="https://web.dio.me/track/santander-2025-front-end">DIO</a><br>
+        Documentação oficial - <a href="https://developer.mozilla.org/">MDN Web Docs</a><br>
+        The World Wide Web Consortium - <a href="https://www.w3.org/">W3C</a><br>
+        Caminho do código <a href="https://www.youtube.com/watch?v=8h0Pf_z27kE/">https://www.youtube.com/watch?v=8h0Pf_z27kE</a>
+    </p>
+
+</body>
+</html>
